@@ -74,7 +74,7 @@ public class AuthenticationController {
         }
     }
 
-    @GetMapping("logout")
+    @GetMapping("api/logout")
     public ResponseEntity<String> logout(HttpServletResponse response) {
         System.out.println("Hello");
         response.setHeader("Authorization", ""); 
